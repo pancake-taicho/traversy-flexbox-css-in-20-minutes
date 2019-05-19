@@ -1,23 +1,31 @@
 <style>
   .container-1 {
+    display: flex;
+    /* align-items: flex-start; 
+    align-items: flex-end; 
+    align-items: center; 
 
+    flex-direction: column; */
   } 
 
-  .container-1 div{
+  .container-1 div, .container-2 div{
     border: 1px #ccc solid;
     padding: 14px;
   }
 
   .box-1 {
-
+    flex: 2;
+    order: 2;
   }
 
   .box-2 {
-
+    flex: 1;
+    order: 1
   }
 
   .box-3 {
-
+    flex: 1;
+    order: 3;
   }
 </style>
 
@@ -34,4 +42,21 @@
     <h1>Box 3</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur.</p>
   </div>
+</div>
+
+<div class="container-2">
+  <div class="container-2-box">
+    <div class="box-4">
+      <h1>Box 4</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur.</p>
+    </div>
+    <div class="box-5">
+      <h1>Box 5</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur.</p>
+    </div>
+    <div class="box-6">
+      <h1>Box 6</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consectetur.</p>
+    </div>
+  </div>  
 </div>
